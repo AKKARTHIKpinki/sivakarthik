@@ -1,0 +1,39 @@
+create database karthik;
+create schema siva1
+ 
+create schema ram
+use schema ram
+ 
+select current_schema()
+ 
+show tables;
+ 
+select * from vasu
+ 
+select * from venkat
+ 
+insert into venkat values(5,45,'ven','aaaa','cccc'),(55,32,'pari','bbbb','dddd')
+ 
+insert into venkat(id,age,name,add) values(66,33,'ven','aaaa')
+ 
+create table pink as
+select id,name,age from venkat
+ 
+select * from pink
+ 
+drop table kar
+ 
+use database karthik;
+use schema siva1
+ 
+create or replace table karthik.siva1.rajesh(id int,name string)
+ 
+select * from rajesh;
+ 
+insert into rajesh values(5,'rajesh'),(7,'karthik')
+ 
+update rajesh set id =15 where id =7
+ 
+delete from rajesh where id =15
+ 
+create or replace table venkat (id int,age int,name string,add string,comp string)
